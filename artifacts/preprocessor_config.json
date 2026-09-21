@@ -1,0 +1,6 @@
+{
+  "lowercase": true,
+  "remove_stopwords": false,
+  "remove_punctuation": true,
+  "min_word_len": 2
+}
