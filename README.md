@@ -123,6 +123,27 @@ pip install -r requirements.txt
 
 All features are executed directly from the terminal via `main.py`.
 
+### 0. Launch the Web Frontend (Minimalist UI)
+Start the local web application server:
+```bash
+python main.py serve
+# Or directly:
+python server.py
+```
+Open **[http://127.0.0.1:8000](http://127.0.0.1:8000)** in your browser.
+
+**Web Features:**
+- Minimal, clean monochromatic editorial design (no loud or funky colors)
+- Preset sample article selector for instant 1-click classification
+- Real-time text input with live character and word counters
+- File upload dropzone for `.txt` and `.md` article files
+- Class probability distribution breakdown with progress tracks
+- GloVe 50d lexical coverage metrics & Out-of-Vocabulary (OOV) token inspector
+- Model Architecture & Evaluation metrics modal with embedded confusion matrix and training curves
+- Clean light / dark mode toggle
+
+---
+
 ### 1. Training the Model
 Train the FNN classifier using the labeled dataset and GloVe vectors:
 ```bash

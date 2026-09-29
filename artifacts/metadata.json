@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-20T16:44:09.439742",
+  "timestamp": "2026-09-22T10:53:39.133190",
   "dataset_path": "D:\\News Bias Detection\\data\\news_bias_dataset.csv",
   "glove_path": "D:\\News Bias Detection\\data\\embeddings\\glove_mini.50d.txt",
   "embedding_dim": 50,

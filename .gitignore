@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.env
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific artifacts that can be large (optional: keep artifacts/ metadata if needed)
+data/embeddings/*.zip
+data/embeddings/glove.6B.*.txt
+!data/embeddings/glove_mini.50d.txt
+
+# OS
+.DS_Store
+Thumbs.db

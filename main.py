@@ -152,6 +152,26 @@ def parse_args():
         help="Directory to save the extracted GloVe file"
     )
 
+    # --- SERVE SUBCOMMAND ---
+    serve_parser = subparsers.add_parser("serve", help="Launch the web frontend and API server")
+    serve_parser.add_argument(
+        "--host",
+        type=str,
+        default="127.0.0.1",
+        help="Server host address"
+    )
+    serve_parser.add_argument(
+        "--port",
+        type=int,
+        default=8000,
+        help="Server port"
+    )
+    serve_parser.add_argument(
+        "--reload",
+        action="store_true",
+        help="Enable auto-reload on code change"
+    )
+
     return parser
 
 
@@ -205,6 +225,10 @@ def main():
 
     elif args.command == "download-glove":
         download_official_glove(dimension=args.dim, target_dir=args.target_dir)
+
+    elif args.command == "serve":
+        from server import start_server
+        start_server(host=args.host, port=args.port, reload=args.reload)
 
     else:
         parser.print_help()
